@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Description" content="Enter your description here" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Website bán hàng</title>
+</head>
+
+<body>
+    <div class="top-nav-bar">
+        <div class="search-box">
+            <!-- 2 cái icon lúc đa thiết bị -->
+            <i class="fa fa-bars" id="menu-btn" onclick="openmenu()"></i>
+            <i class="fa fa-times" id="close-btn" onclick="closemenu()"></i>
+            <!--  -->
+            <a href="index.html"><img src="images/orange-logo.png" class="logo"></a>
+            <input type="text" class="form-control">
+            <span class="input-group-text">
+                <i class="fas fa-search"></i>
+            </span>
+        </div>
+        <div class="menu-bar">
+            <ul>
+                <li><a href="cart.html"><i class="fa fa-shopping-basket"></i>Giỏ hàng</a></li>
+                <li><a href="" data-toggle="modal" data-target="#register">Đăng kí</a></li>
+                <li><a href="" data-toggle="modal" data-target="#login">Đăng nhập</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- kết thúc logo -->
+
+    <!-- menu dọc -->
+    <section class="header">
+        <div class="side-menu" id="side-menu">
+            <ul>
+                <li>Thời Trang Nữ <i class="fa fa-angle-right"></i>
+                    <ul>
+                        <li>Váy</li>
+                        <li>Đầm </li>
+                        <li>Áo dài</li>
+                    </ul>
+                </li>
+                <li>Điện Thoại <i class="fa fa-angle-right"></i>
+                    <ul>
+                        <li>Iphone</li>
+                        <li>SamSung</li>
+                        <li>Nokia</li>
+                    </ul>
+                </li>
+                <li>Thời Trang Nam <i class="fa fa-angle-right"></i>
+                    <ul>
+                        <li>Áo Sơ mi</li>
+                        <li>Quần Tây</li>
+                        <li>Áo Thun</li>
+                    </ul>
+                </li>
+                <li>Giày <i class="fa fa-angle-right"></i>
+                    <ul>
+                        <li>Adidas</li>
+                        <li>Nike</li>
+                        <li>Gucci</li>
+                    </ul>
+                </li>
+                <li>Sức khỏe & Làm đẹp</i>
+                <li>Đồng Hồ</i>
+                <li>Tai Nghe</i>
+                <li>Sim</i>
+                <li>Thẻ Cào</i>
+
+                </li>
+            </ul>
+        </div>
+
+        <!-- slider -->
+        <div class="slider">
+            <section class="single-product">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-5">
+                            <div id="product-slider" class="carousel slide" data-ride="carousel">
+                                <ol class="carousel-indicators">
+                                    <li data-target="#product-slider" data-slide-to="0" class="active"></li>
+                                    <li data-target="#product-slider" data-slide-to="1"></li>
+                                    <li data-target="#product-slider" data-slide-to="2"></li>
+                                </ol>
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="images/pic-1.jpg" class="d-block w-100">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="images/pic-2.jpg" class="d-block w-100">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="images/pic-3.jpg" class="d-block w-100">
+                                    </div>
+                                </div>
+                                <a class="carousel-control-prev" href="#product-slider" role="button" data-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+                                <a class="carousel-control-next" href="#product-slider" role="button" data-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Next</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-7">
+                            <p class="new-arrival text-center">NEW</p>
+                            <h2>Áo Thun Nam Cổ Tròn Chất Thun Lạnh</h2>
+                            <p>Mã sản phẩm: IMR 578</p>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+
+                            <p class="price">500.000 VNĐ</p>
+                            <p><b>Danh mục:</b> Thời trang nam</p>
+                            <p><b>Tình trạng:</b> Còn hàng</p>
+                            <p><b>Nhãn hiệu:</b> XYZ</p>
+                            <label for="">Số lượng:</label>
+                            <input type="number" value="1" min="1" max="10">
+                            <button class="btn btn-primary " type="button"><a href="cart.html">Thêm vào giỏ
+                                    hàng</a></button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ================ mổ tả sản phẩm================== -->
+            <section class="product-description mt-5">
+                <div class="container">
+                    <div class="row">
+                        <h2>Mô tả sản phẩm</h5>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus provident labore
+                                incidunt
+                                aperiam laborum illum quod veritatis, enim cum corrupti nam quam beatae eos consectetur
+                                itaque
+                                molestias eaque consequuntur exercitationem eum quisquam ut numquam! Accusantium aperiam
+                                nesciunt
+                                neque autem rem nostrum officia nobis, quod, assumenda excepturi porro eligendi ab quo?
+                            </p>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus provident labore
+                                incidunt
+                                aperiam laborum illum quod veritatis, enim cum corrupti nam quam beatae eos consectetur
+                                itaque
+                                molestias eaque consequuntur exercitationem eum quisquam ut numquam! Accusantium aperiam
+                                nesciunt
+                                neque autem rem nostrum officia nobis, quod, assumenda excepturi porro eligendi ab quo?
+                            </p>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus provident labore
+                                incidunt
+                                aperiam laborum illum quod veritatis, enim cum corrupti nam quam beatae eos consectetur
+                                itaque
+                                molestias eaque consequuntur exercitationem eum quisquam ut numquam! Accusantium aperiam
+                                nesciunt
+                                neque autem rem nostrum officia nobis, quod, assumenda excepturi porro eligendi ab quo?
+                            </p>
+                    </div>
+                </div>
+
+            </section>
+        </div>
+        </div>
+    </section>
+
+
+    <!-- =====neww product======= -->
+    <section class="new-product">
+        <div class="container">
+            <div class="row">
+                <div class="title-box">
+                    <h2>Sản phẩm</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3 col-12">
+                    <div class="product-top">
+                        <a href="product-detail.html"> <img src="images/pic-1.jpg"></a>
+                        <div class="overlay-right">
+                            <button class="btn btn-secondary" type="button" title="Quick-shop" data-toggle="modal"
+                                data-target="#dataModal">
+                                <i class="fa fa-eye"></i>
+                            </button>
+                            <button class="btn btn-secondary" type="button" title="Add to wishlist">
+                                <i class="fas fa-heart"></i>
+                            </button>
+                            <button class="btn btn-secondary" type="button" title="Add to card">
+                                <a href="cart.html"><i class="fa fa-shopping-cart"></i></a>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-bottom text-center">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <h3>Áo Thun Nam - 578</h3>
+                        <h5>500.000 VNĐ</h5>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-12">
+                    <div class="product-top">
+                        <a href="product-detail.html"> <img src="images/product2.jpg"></a>
+                        <div class="overlay-right">
+                            <button class="btn btn-secondary" type="button" title="Quick-shop" data-toggle="modal"
+                                data-target="#dataModal">
+                                <i class="fa fa-eye"></i>
+                            </button>
+                            <button class="btn btn-secondary" type="button" title="Add to wishlist">
+                                <i class="fas fa-heart"></i>
+                            </button>
+                            <button class="btn btn-secondary" type="button" title="Add to card">
+                                <a href="cart.html"><i class="fa fa-shopping-cart"></i></a>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-bottom text-center">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <h3>App Watch - 579</h3>
+                        <h5>8.000.000 VNĐ</h5>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-12">
+                    <div class="product-top">
+                        <a href="product-detail.html"> <img src="images/product3.jpg"></a>
+                        <div class="overlay-right">
+                            <button class="btn btn-secondary" type="button" title="Quick-shop" data-toggle="modal"
+                                data-target="#dataModal">
+                                <i class="fa fa-eye"></i>
+                            </button>
+                            <button class="btn btn-secondary" type="button" title="Add to wishlist">
+                                <i class="fas fa-heart"></i>
+                            </button>
+                            <button class="btn btn-secondary" type="button" title="Add to card">
+                                <a href="cart.html"><i class="fa fa-shopping-cart"></i></a>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-bottom text-center">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <h3>Giày Tây- 110</h3>
+                        <h5>1.500.000 VNĐ</h5>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-12">
+                    <div class="product-top">
+                        <a href="product-detail.html"> <img src="images/product4.jpg"></a>
+                        <div class="overlay-right">
+                            <button class="btn btn-secondary" type="button" title="Quick-shop" data-toggle="modal"
+                                data-target="#dataModal">
+                                <i class="fa fa-eye"></i>
+                            </button>
+                            <button class="btn btn-secondary" type="button" title="Add to wishlist">
+                                <i class="fas fa-heart"></i>
+                            </button>
+                            <button class="btn btn-secondary" type="button" title="Add to card">
+                                <a href="cart.html"><i class="fa fa-shopping-cart"></i></a>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-bottom text-center">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <h3>Đồng hồ Rider - 558</h3>
+                        <h5>2.500.000 VNĐ</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- modal -->
+    <div class="modal fade" id="dataModal" tabindex="-1" aria-labelledby="dataModal" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Chi tiết sản phẩm</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-5">
+                            <img src="images/pic-1.jpg" style="width:100%">
+                        </div>
+                        <div class="col-md-7">
+                            <div class="product__modal-name">
+                                <a href="">
+                                    <h2>
+                                        Áo Thun Nam Cổ Tròn Chất Thun Lạnh
+                                    </h2>
+                                </a>
+                            </div>
+
+                            <div class="product__modal-review d-flex border-bottom pb-3">
+                                <div class="text-warning">
+                                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                                </div>
+
+                                <div class="review ml-3">
+                                    (Chưa có đánh giá nào cho sản phẩm này)
+                                </div>
+                            </div>
+
+                            <div class="product__modal-price">
+                                <div class="price-buy"> 500.000 VNĐ</div>
+                                <div class="price-root" style="opacity: 0">500.000 VNĐ</div>
+                            </div>
+
+                            <div class="product__modal-info">
+                                <ul class="m-0 list-unstyled">
+                                    <li class="text-capitalize">
+                                        Lượt xem:
+                                        <strong class="text-uppercase">104</strong>
+                                    </li>
+                                    <li class="text-capitalize">
+                                        Mã sản phẩm:
+                                        <strong class="text-uppercase">IRM-578</strong>
+                                    </li>
+                                    <li class="text-capitalize">
+                                        Danh mục:
+                                        <strong class="text-capitalize">Thời Trang Nam</strong>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="product__modal-btn mt-5">
+                                <a href="" class="product__modal-link addToCart btn btn-primary" data-id="21">
+                                    <i class="fa fa-shopping-basket pr-2" aria-hidden="true"></i>Thêm vào giỏ hàng
+                                </a>
+                                <a href="" class="product__modal-link btn btn-primary">
+                                    <i class="fas fa-heart pr-2"></i>Yêu thích
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===đăng nhập ==== -->
+    <!-- Modal -->
+    <div class="modal fade" id="login" tabindex="-1" aria-labelledby="login" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">TÀI KHOẢN ĐĂNG NHẬP</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="fullname1">Tên Đăng Nhập</label>
+                            <input type="text" class="form-control1" id="fullname1" aria-describedby="emailHelp">
+                        </div>
+                        <div class="form-group">
+                            <label for="Password1">Password</label>
+                            <input type="password" class="form-control1" id="Password1">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Đăng nhập</button>
+                        <small>Quên mật khẩu</small>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===đăng kí ==== -->
+    <!-- Modal -->
+    <div class="modal fade" id="register" tabindex="-1" aria-labelledby="register" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">ĐĂNG KÝ THÀNH VIÊN</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <input type="text" class="form-control1" placeholder="Họ và tên">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control1" placeholder="Tên đăng nhập">
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="form-control1" placeholder="Mật khẩu">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control1" placeholder="Email">
+                        </div>
+                        <div class="form-group">
+                            <input type="number" class="form-control1" placeholder="Số điện thoại">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control1" placeholder="Địa chỉ">
+                        </div>
+                        <div class="form-group">
+                            <select class="form-control1" id="Select1">
+                                <option>--Chọn giới tính--</option>
+                                <option>Nam</option>
+                                <option>Nữ</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn btn-primary register ">Đăng ký</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ====footer=== -->
+    <section class="footer">
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-md-3">
+                    <h1>Useful Link</h1>
+                    <p>Privacy Policy</p>
+                    <p>Term of Use</p>
+                    <p>Return Policy</p>
+                    <p>Discount Coupons</p>
+                </div>
+                <div class="col-md-3">
+                    <h1>Company</h1>
+                    <p>About Us</p>
+                    <p>Contact Us</p>
+                    <p>Career</p>
+                    <p>Affiliate</p>
+                </div>
+                <div class="col-md-3">
+                    <h1>Follow Us On</h1>
+                    <p><i class="fab fa-facebook"></i> Facebook</p>
+                    <p><i class="fab fa-youtube"></i>YouTube</p>
+                    <p><i class="fab fa-linkedin-in"></i>Linkedin</p>
+                    <p><i class="fab fa-twitter"></i>Twitter</p>
+                </div>
+                <div class="col-md-3 footer-image">
+                    <h1>Download App</h1>
+                    <img src="images/app-logo.png" alt="">
+                </div>
+            </div>
+            <hr>
+            <p class="copy-right">© 2018 Friends Forever. All Rights Reserved. Design by HM</p>
+        </div>
+    </section>
+
+
+    <script>
+        function openmenu() {
+            document.getElementById('side-menu').style.display = "block";
+            document.getElementById('menu-btn').style.display = "none";
+            document.getElementById('close-btn').style.display = "block";
+        }
+        function closemenu() {
+            document.getElementById('side-menu').style.display = "none";
+            document.getElementById('menu-btn').style.display = "block";
+            document.getElementById('close-btn').style.display = "none";
+        }
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

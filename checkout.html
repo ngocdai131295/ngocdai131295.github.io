@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Description" content="Enter your description here" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="checkout.css">
+    <title>Website bán hàng</title>
+</head>
+
+<body>
+    <div class="top-nav-bar">
+        <div class="search-box">
+            <!-- 2 cái icon lúc đa thiết bị -->
+            <i class="fa fa-bars" id="menu-btn" onclick="openmenu()"></i>
+            <i class="fa fa-times" id="close-btn" onclick="closemenu()"></i>
+            <!--  -->
+            <a href="index.html"> <img src="images/orange-logo.png" class="logo"></a>
+            <input type="text" class="form-control">
+            <span class="input-group-text">
+                <i class="fas fa-search"></i>
+            </span>
+        </div>
+        <div class="menu-bar">
+            <ul>
+                <li><a href="cart.html"><i class="fa fa-shopping-basket"></i>Giỏ hàng</a></li>
+                <li><a href="" data-toggle="modal" data-target="#register">Đăng kí</a></li>
+                <li><a href="" data-toggle="modal" data-target="#login">Đăng nhập</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- kết thúc logo -->
+
+    <!-- ====Thanh toán ===== -->
+    <section class="checkout">
+        <div class="container">
+            <div class="row">
+                <!-- cột thứ 1 -->
+                <div class="col-md-6">
+                    <h3>THÔNG TIN KHÁCH HÀNG</h3>
+                    <hr>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="id_kh">Mã khách hàng</label>
+                                <input type="text" class="form-control1" id="id_kh" value="25">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="fullname" class="d-block">Họ tên</label>
+                                <input type="text" class="form-control1" id="fullname" value="Nguyễn Ngọc Đại">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="email-id" class="d-block">Email</label>
+                                <input type="text" class="form-control1" id="email-id" value="ngocdai131295@gmail.com">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="number" class="d-block">Số điện thoại</label>
+                                <input type="text" class="form-control1" id="number" value="09999999">
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <label for="address" class="d-block">Địa chỉ</label>
+                                <input type="text" class="form-control1" id="number" value="Nha Trang">
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <label for="textarea">Ghi chú</label>
+                                <textarea class="form-control1" id="textarea" rows="10"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- cột thứ 2 -->
+                <div class="col-md-6">
+                    <h3>THÔNG TIN ĐƠN HÀNG</h3>
+                    <hr>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <label>Sản Phẩm</label>
+                        </div>
+                        <div class="col-md-6 float-right">
+                            <p class="text-total text">Tổng</p>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <p>Áo Thun Nam Cổ Tròn Chất Thun Lạnh x3</p>
+                        </div>
+                        <div class="col-md-6 float-right">
+                            <p class="text-total"> 1.500.000 VNĐ</p>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <label>TỔNG ĐƠN HÀNG</label>
+                        </div>
+                        <div class="col-md-6 float-right">
+                            <p class="text-total text">1.500.000 VNĐ</p>
+                        </div>
+                    </div>
+                    <button class="btn btn-primary">Đặt hàng</button>
+                </div>
+            </div>
+
+        </div>
+        </div>
+    </section>
+
+    <!-- ===đăng nhập ==== -->
+    <!-- Modal -->
+    <div class="modal fade" id="login" tabindex="-1" aria-labelledby="login" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">TÀI KHOẢN ĐĂNG NHẬP</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="fullname1">Tên Đăng Nhập</label>
+                            <input type="text" class="form-control1" id="fullname1" aria-describedby="emailHelp">
+                        </div>
+                        <div class="form-group">
+                            <label for="Password1">Password</label>
+                            <input type="password" class="form-control1" id="Password1">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Đăng nhập</button>
+                        <small>Quên mật khẩu</small>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===đăng kí ==== -->
+    <!-- Modal -->
+    <div class="modal fade" id="register" tabindex="-1" aria-labelledby="register" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">ĐĂNG KÝ THÀNH VIÊN</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <input type="text" class="form-control1" placeholder="Họ và tên">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control1" placeholder="Tên đăng nhập">
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="form-control1" placeholder="Mật khẩu">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control1" placeholder="Email">
+                        </div>
+                        <div class="form-group">
+                            <input type="number" class="form-control1" placeholder="Số điện thoại">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control1" placeholder="Địa chỉ">
+                        </div>
+                        <div class="form-group">
+                            <select class="form-control1" id="Select1">
+                                <option>--Chọn giới tính--</option>
+                                <option>Nam</option>
+                                <option>Nữ</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn btn-primary register ">Đăng ký</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- ====footer=== -->
+    <section class="footer">
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-md-3">
+                    <h1>Useful Link</h1>
+                    <p>Privacy Policy</p>
+                    <p>Term of Use</p>
+                    <p>Return Policy</p>
+                    <p>Discount Coupons</p>
+                </div>
+                <div class="col-md-3">
+                    <h1>Company</h1>
+                    <p>About Us</p>
+                    <p>Contact Us</p>
+                    <p>Career</p>
+                    <p>Affiliate</p>
+                </div>
+                <div class="col-md-3">
+                    <h1>Follow Us On</h1>
+                    <p><i class="fab fa-facebook"></i> Facebook</p>
+                    <p><i class="fab fa-youtube"></i>YouTube</p>
+                    <p><i class="fab fa-linkedin-in"></i>Linkedin</p>
+                    <p><i class="fab fa-twitter"></i>Twitter</p>
+                </div>
+                <div class="col-md-3 footer-image">
+                    <h1>Download App</h1>
+                    <img src="images/app-logo.png" alt="">
+                </div>
+            </div>
+            <hr>
+            <p class="copy-right">© 2018 Friends Forever. All Rights Reserved. Design by HM</p>
+        </div>
+    </section>
+
+
+    <script>
+        function openmenu() {
+            document.getElementById('side-menu').style.display = "block";
+            document.getElementById('menu-btn').style.display = "none";
+            document.getElementById('close-btn').style.display = "block";
+        }
+        function closemenu() {
+            document.getElementById('side-menu').style.display = "none";
+            document.getElementById('menu-btn').style.display = "block";
+            document.getElementById('close-btn').style.display = "none";
+        }
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
